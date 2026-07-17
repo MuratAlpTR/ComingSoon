@@ -62,12 +62,12 @@
 							</audio>
 							
 							<script>
-								const music = document.getElementById("bgMusic");
-								music.volume = 1;
+							const music = document.getElementById("bgMusic");
+							music.volume = 1;
 							
-							document.addEventListener("click", () => {
-								    music.play();
-								}, { once: true });
+							document.body.addEventListener("click", () => {
+							    music.play();
+							}, { once: true });
 							</script>
 								<!-- End / music hide undefined -->
 
