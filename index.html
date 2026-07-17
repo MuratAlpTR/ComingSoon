@@ -57,13 +57,23 @@
 							<!-- End / countdown__module hide undefined -->
 							<!-- Test --!>
 							<!-- music hide undefined -->
-							<audio id="bgMusic" autoplay loop>
+							<audio id="bgMusic" loop>
 								    <source src="./Remembrance.mp3" type="audio/mpeg">
 								</audio>
 								
 								<script>
 								const music = document.getElementById("bgMusic");
 								music.volume = 1;
+								
+								window.addEventListener("load", () => {
+								    music.play()
+								    .then(() => {
+								        console.log("Müzik başladı");
+								    })
+								    .catch(() => {
+								        console.log("Autoplay engellendi");
+								    });
+								});
 								</script>
 								<!-- End / music hide undefined -->
 
