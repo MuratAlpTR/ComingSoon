@@ -2012,21 +2012,15 @@ mark, .mark {
 --------------------------------------------------------------------------------*/
 
 .countdown__module {
-    display: table;
-    width: 100%;
-    margin: 20px 0;
-    color: #c2c2c2;
+    display: flex;
+    gap: 40px;
 }
 
+
 .countdown__module p {
-    display: table-cell;
-    vertical-align: middle;
-    font-size: 10px;
-    font-weight: 900;
-    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    letter-spacing: 3px;
-    width: 25%;
 }
 
 @media (min-width: 320px) {
@@ -2042,13 +2036,7 @@ mark, .mark {
 }
 
 .countdown__module span {
-    display: block;
-    font-family: "Work Sans", sans-serif;
     font-size: 30px;
-    font-weight: 300;
-    line-height: 1;
-    color: #fff;
-    margin-bottom: 10px;
 }
 
 @media (min-width: 320px) {
