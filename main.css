@@ -2036,7 +2036,7 @@ mark, .mark {
 }
 
 .countdown__module span {
-    font-size: 30px;
+    margin-right: 5px;
 }
 
 @media (min-width: 320px) {
