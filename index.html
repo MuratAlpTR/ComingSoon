@@ -57,9 +57,18 @@
 							<!-- End / countdown__module hide undefined -->
 							<!-- Test --!>
 							<!-- music hide undefined -->
-							<audio autoplay loop muted>
+							<audio id="bgMusic" loop>
 							    <source src="./Remembrance.mp3" type="audio/mpeg">
 							</audio>
+							
+							<script>
+								const music = document.getElementById("bgMusic");
+								music.volume = 1;
+							
+							document.addEventListener("click", () => {
+								    music.play();
+								}, { once: true });
+							</script>
 								<!-- End / music hide undefined -->
 
 								
